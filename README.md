@@ -5,7 +5,7 @@ parallel calculate the number pi using openmpi
  mpicc Rahmani_Taha.c -lm -o Rahmani_Taha
  
 ## how to run
-  mpirun ./Rahmani_Taha
+  mpirun -np 24 ./Rahmani_Taha
 
 
 
