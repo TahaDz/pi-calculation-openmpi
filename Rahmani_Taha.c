@@ -33,7 +33,7 @@ int main(int argc, char** argv) {
 	// receive all parts of pi 
        MPI_Recv(&pi, 1, MPI_FLOAT, MPI_ANY_SOURCE, 0, MPI_COMM_WORLD,
              MPI_STATUS_IGNORE);
-	printf("00PI = %f\n",pi);
+	printf("PI = %f\n",pi);
        PI_FINAL +=pi;
     }
     printf("PI = %f\n",PI_FINAL); 
